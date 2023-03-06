@@ -1,1 +1,0 @@
-import{m as a,_ as e,o as n,a as s}from"./index-32c690d8.js";import{c as d}from"./NavbarFront-8b91d426.js";const c={data(){return{}},props:["productId"],methods:{...a(d,["addCart"])}};function p(o,t,r,m,u,i){return n(),s("button",{onClick:t[0]||(t[0]=f=>o.addCart(r.productId))},"加入購物車")}const C=e(c,[["render",p]]);export{C as A};

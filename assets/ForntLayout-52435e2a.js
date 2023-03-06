@@ -1,1 +1,0 @@
-import{_ as e,R as t,r,o as n,c as s}from"./index-32c690d8.js";const c={data(){return{products:[]}},components:{RouterView:t},mounted(){}};function a(p,u,_,d,i,m){const o=r("RouterView");return n(),s(o)}const l=e(c,[["render",a]]);export{l as default};
