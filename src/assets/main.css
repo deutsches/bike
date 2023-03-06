@@ -1,0 +1,67 @@
+@import './base.css';
+#app {
+  /* max-width: 1280px; */
+  margin: 0 auto;
+  /* padding: 2rem; */
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  /* a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  } */
+}
+
+@media (min-width: 1024px) {
+  /* body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  } */
+}
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.primary-image {
+  height: 300px;
+}
+
+.images {
+  height: 150px;
+}
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
+}
+.viewProduct{
+  color: azure;
+  display: block;
+ 
+  background-color: blueviolet !important;
+  transition: all .35s ease;
+  top: 300px;
+}
+.card:hover .viewProduct{
+  top: 259px;
+  display: block;
+  
+}
+.card-body .btn:hover{
+  color: blue;
+}
+.object-fit{
+  object-fit: cover;
+}
