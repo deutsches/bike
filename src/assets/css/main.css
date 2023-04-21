@@ -1,0 +1,53 @@
+@import './base.css';
+#app {  
+  margin: 0 auto;
+  font-weight: normal;
+}
+
+a,
+.green {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+
+}
+
+@media (min-width: 1024px) {
+
+}
+img {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.primary-image {
+  height: 300px;
+}
+
+.images {
+  height: 150px;
+}
+.card-img-top{
+  height: 300px;
+  object-fit: cover;
+}
+.viewProduct{
+  color: azure;
+  display: block;
+  background-color: rgb(85, 153, 241) !important;
+  transition: all .35s ease;
+  top: 300px;
+}
+.card:hover .viewProduct{
+  top: 259px;
+  display: block;
+  
+}
+.card-body .btn:hover{
+  color: blue;
+}
+.object-fit{
+  object-fit: cover;
+}
