@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div class="d-flex" :class="{'sidebar-toggle': open ? true : false}">
     <aside class="sidebar vh-100 border-end d-flex bg-light flex-column pt-4">
       <div class="px-4">
         <strong>福隆驛站 - 管理後台</strong>
@@ -46,8 +46,10 @@
       </a>
     </aside>
     <div class="main">
-      <div class="border-bottom sticky-top bg-white">
-        <a href="" class="py-4 px-4 d-inline-block border-end" id="toggle-btn"
+      <div class="border-bottom sticky-top bg-white"
+      >
+        <a href="#" @click.prevent="btnToggle"
+        class="py-4 px-4 d-inline-block border-end" id="toggle-btn"
           ><i class="bi bi-arrows-angle-expand"></i
         ></a>
       </div>
@@ -67,12 +69,20 @@ export default {
     return {
       products: [],
       isCheck: false,
+      open: false,
     };
   },
   methods: {
     logout() {
       document.cookie = 'hexToken=;expires=;';
       this.$router.push('/');
+    },
+    btnToggle() {
+      if (this.open) {
+        this.open = false;
+      } else {
+        this.open = true;
+      }
     },
     checkAdmin() {
       const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1');
